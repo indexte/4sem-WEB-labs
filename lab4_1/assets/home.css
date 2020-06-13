@@ -1,0 +1,130 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+#left, #middle, #right 
+{
+	border: 1px solid black;
+	position: absolute;
+	width: 35%;
+	height: 77vh;
+	margin: 10px;
+	background-size: cover;
+}
+#left
+{
+	background: url(https://marconisida.com/wp-content/uploads/2015/02/grey-geo-1024x768.jpg) center repeat;
+	top: 0;
+	left: 0;
+}
+#right
+{
+	background: url(https://www.armitagebuckley.com.au/wp-content/uploads/2018/05/geo-shapes-black-1280b.jpg) center repeat;
+	right: 0;
+	top: 0;
+}
+
+#middle
+{
+	background: url(https://i.pinimg.com/originals/e4/30/d8/e430d80c6c0322dca346bf5f4ae41b9f.jpg) center repeat;
+	left: 30%;
+	top: 20%;
+}
+
+#img_left, #img_right, #img_middle {
+    border: 3px solid #fff;
+	position: absolute;
+	width: 50%;
+    height: 30%;
+    background-repeat: no-repeat;
+    background-position: center;
+	left: 3%;
+	top: 3%;
+	position: relative;
+}
+
+#img_left {
+	background-size: 80%;
+    background-color: #f2f2f2;
+    background-image: url(https://i.pinimg.com/originals/d2/c1/6d/d2c16d99034f9407fd708dfc3356c688.jpg);
+}
+
+#img_right {
+	background-size: 200%;
+	background-color: #1e1e1e;
+	background-image: url(https://theultralinx.com/.image/t_share/MTQzMzE5ODUzODE2ODgyNzYw/fa705d445198655814aaa59bf58png.png);
+}
+
+#img_middle {
+	background-size: 100%;
+	background-color: #f7b312;
+	background-image: url(https://webneel.com/image/logo/11-logo-design-tiger-by-martigny.jpg);
+	margin-bottom: 60px;
+}
+
+#img_descr_left, #img_descr_right {
+	padding: 1% 50% 2% 5%;
+	text-align: center;
+	font-size: 2vh;
+}
+
+#img_descr_left {
+	color: black;
+}
+
+#img_descr_right {
+	color: #fff;
+}
+
+#content {
+	margin: 0 3%;
+	position: absolute;
+	width: 50%;
+	height: fit-content;
+	border: 3px solid #fff;
+	text-decoration: none;
+	background-color: #fff;
+	float: left;
+}
+
+.nav {
+	background-color: #dedede;
+	padding: 3%;
+	font-size: 2.5vh;
+}
+
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+
+    position: relative;
+
+    color: blue;
+    text-decoration: none;
+
+    transition: color 0.2s linear;
+}
+
+.nav__link:hover {
+    color: #b43273;
+}
+
+.envato {
+	width: 50%;
+	height: 50%;
+	float: left;
+	border: 3px solid #c7c7c7;
+	margin-right: 5%;
+}
+
+.envato_text {
+	padding-left: 3%;
+	font-size: 1vw;
+}
+
+.visit_link {
+	padding-left: 3%;
+	font-size: 1.3vw;
+	font-weight: bold;
+}

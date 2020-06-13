@@ -1,0 +1,35 @@
+body {
+    font-size: 14px;
+    font-family: 'Times New Roman', serif;
+    background-color: #333;
+}
+
+.intro {
+    background-color: #fff;
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.header {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.title {
+    font-size: 48px;
+    text-align: center;
+    padding-top: 10%;
+}
+
+.subtitle {
+    margin: 0 20px;
+    font-size: 24px;
+    text-align: right;
+    padding-bottom: 15%;
+}
+
+.end {
+    font-size: 24px;
+    text-align: center;
+}

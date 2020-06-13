@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="/style.css" rel="stylesheet">
+</head>
+<body>
+   <section>
+      <div class = 'result'></div>
+      <div class = 'main'>
+         <button class = 'off' id = 'off'>Off</button>
+         <button class = 'clear'>C</button>
+         <button class = 'delete'>Del &lt;</button>
+      </div>
+      <div class = 'numbers'>
+         <button class = 'one'>1</button>
+         <button class = 'two'>2</button>
+         <button class = 'three'>3</button>
+         <button class = 'four'>4</button>
+         <button class = 'five'>5</button>
+         <button class = 'six'>6</button>
+         <button class = 'seven'>7</button>
+         <button class = 'eight'>8</button>
+         <button class = 'nine'>9</button>
+         <button class = 'zero number'>0</button><br>
+      </div>
+      <div class = 'signs'>
+         <button class = 'plus'>+</button>
+         <button class = 'minus'>-</button>
+         <button class = 'multi'>*</button>
+         <button class = 'di'>/</button>
+         <button class = 'module'>%</button>
+         <button class = 'pow'>^</button>
+         <button class = 'equal'>=</button>
+      </div>
+   </section>
+
+   <script>
+   ! function () {
+	"use strict";
+
+	function clicking(t) {
+		result.textContent += t.textContent
+	}
+	var off = document.getElementById("off"),
+		result = document.getElementsByClassName("result")[0],
+		clear = document.getElementsByClassName("clear")[0],
+		Delete = document.getElementsByClassName("delete")[0],
+		one = document.querySelector(".one"),
+		two = document.querySelector(".two"),
+		three = document.querySelector(".three"),
+		four = document.querySelector(".four"),
+		five = document.querySelector(".five"),
+		six = document.querySelector(".six"),
+		seven = document.querySelector(".seven"),
+		eight = document.querySelector(".eight"),
+		nine = document.querySelector(".nine"),
+		zero = document.querySelector(".zero"),
+		equal = document.querySelector(".equal"),
+		plus = document.querySelector(".plus"),
+		minus = document.querySelector(".minus"),
+		multi = document.querySelector(".multi"),
+		di = document.querySelector(".di"),
+		module = document.querySelector(".module"),
+		pow = document.querySelector(".pow"),
+		slice = result.textContent.slice(-1)
+	equal.onclick = function () {
+		var x = result.textContent.replace("^", "**").replace('π', 'Math.PI').replace("√", "Math.sqrt(").replace("∛", "Math.cbrt(").replace("Sin(", "Math.sin(").replace("tan(", "Math.tan(").replace("Cos(", "Math.cos("); - 1 !== x.indexOf("Math.sqrt") || -1 !== x.indexOf("Math.cbrt") ? result.textContent = x + ")" : -1 !== x.indexOf("Math.sin") || -1 !== x.indexOf("Math.tan") || -1 !== x.indexOf("Math.cos") ? result.textContent = x + " * Math.PI / 180)" : result.textContent = x, "*" === result.textContent.slice(-1) || "+" === result.textContent.slice(-1) || "-" === result.textContent.slice(-1) || "/" === result.textContent.slice(-1) || "%" === result.textContent.slice(-1) || "^" === result.textContent.slice(-1) ? (result.textContent = "Syntax Error", Delete.style.display = "none") : (result.textContent = eval(result.textContent), Delete.style.display = "inline")
+	}, off.onclick = function () {
+		"Off" === this.textContent ? (result.textContent = "Calculator Is Off", result.style.color = "#F00", this.textContent = "On", this.style.backgroundColor = "#080", Delete.onclick = function (t) {
+			t.preventDefault()
+		}, clear.onclick = function (t) {
+			t.preventDefault()
+		}) : (result.textContent = "", result.style.color = "#555", this.textContent = "Off", this.style.backgroundColor = "#F00", clear.onclick = function () {
+			result.textContent = ""
+		}, Delete.onclick = function () {
+			result.textContent = result.textContent.slice(0, -1)
+		})
+	}, clear.onclick = function () {
+		result.textContent = ""
+	}, Delete.onclick = function () {
+		result.textContent = result.textContent.slice(0, -1)
+	}, one.onclick = function () {
+		clicking(this)
+	}, two.onclick = function () {
+		clicking(this)
+	}, three.onclick = function () {
+		clicking(this)
+	}, four.onclick = function () {
+		clicking(this)
+	}, five.onclick = function () {
+		clicking(this)
+	}, six.onclick = function () {
+		clicking(this)
+	}, seven.onclick = function () {
+		clicking(this)
+	}, eight.onclick = function () {
+		clicking(this)
+	}, nine.onclick = function () {
+		clicking(this)
+	}, zero.onclick = function () {
+		clicking(this)
+	}, plus.onclick = function () {
+		clicking(this)
+	}, minus.onclick = function () {
+		clicking(this)
+	}, di.onclick = function () {
+		clicking(this)
+	}, multi.onclick = function () {
+		clicking(this)
+	}, module.onclick = function () {
+		clicking(this)
+	}, pow.onclick = function () {
+		clicking(this)
+	}, sqrt.onclick = function () {
+		clicking(this)
+	}, cbrt.onclick = function () {
+		clicking(this)
+	}, tan.onclick = function () {
+		clicking(this)
+	}, cos.onclick = function () {
+		clicking(this)
+	}, sin.onclick = function () {
+		clicking(this)
+	}, pi.onclick = function () {
+		clicking(this)
+	}
+}();</script>
+</body>
+</html>

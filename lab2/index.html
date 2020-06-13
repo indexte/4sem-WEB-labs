@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1>Форма заявки на работу в зоопарке</h1>
+    <p><em>Пожалуйста, заполните форму. Обязательные поля отмечены <font color="red">*</font></em></p>
+    <fieldset>
+        <legend><h3>Контактная информация</h3></legend>
+            <table width="100%" cellspacing="0" cellpadding="4">
+                <tr> 
+                    <td align="right" width="100">Имя<font color="red">*</font></td>
+                    <td><input type="text" name="nickname" maxlength="50" size="20"></td>
+                </tr>
+                <tr> 
+                    <td align="right">Телефон</td>
+                    <td><input type="text" name="email" maxlength="50" size="20"></td>
+                </tr>
+                <tr> 
+                    <td align="right">Email<font color="red">*</font></td>
+                    <td><input type="email" name="email" maxlength="50" size="20"></td>
+                </tr>
+            </table>
+    </fieldset>
+    <fieldset>
+        <legend><h3>Персональная информация</h3></legend>
+            <table width="100%" cellspacing="0" cellpadding="4">
+                <tr> 
+                    <td align="right" width="100">Возраст<font color="red">*</font></td>
+                    <td><input type="text"maxlength="50" size="20"></td>
+                </tr>
+                <tr>
+                    <td align="right" width="100">Пол</td>
+                    <td><select>
+                        <option>Мужской</option>
+                        <option>Женский</option>
+                        <option>Другое</option>
+                    </select></td>
+                </tr>
+                <tr> 
+                    <td align="right" valign="top">Перечислите личные качества</td>
+                    <td><textarea cols="35" rows="10"></textarea></td>
+                   </tr>
+            </table>
+        
+    </fieldset>
+    <fieldset>
+        <legend><h3>Выберете ваших любимых животных</h3></legend>
+        <table>
+            <tbody>
+                <tr>
+                    <td><p><input type="checkbox">Зебра</p></td>
+                    <td><p><input type="checkbox">Кошак</p></td>
+                    <td><p><input type="checkbox">Анаконда</p></td>
+                    <td><p><input type="checkbox">Человек</p></td>
+                </tr>
+                <tr>
+                    <td><p><input type="checkbox">Слон</p></td>
+                    <td><p><input type="checkbox">Антилопа</p></td>
+                    <td><p><input type="checkbox">Голубь</p></td>
+                    <td><p><input type="checkbox">Краб</p></td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset>
+    <br>
+    <p><button>Отправить информацию</button></p>
+</body>
+</html>

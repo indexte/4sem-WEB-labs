@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+    font-size: 18px;
+    color: #000;
+}
+
+.header {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 50%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.header_layer1 {
+    width: 100%;
+    height: 20px;
+    background-color: #c7c7c7;
+}
+
+.header_layer2 {
+    width: 100%;
+    background-color: #e7e7e7;
+}
+
+.header_layer3 {
+    width: 100%;
+    background-color: #e70000;
+}
+
+.header_layer4 {
+    width: 100%;
+    background-color: #e7e7e7;
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #e70000;
+}
+
+.header_logo {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+    color: #e70000;
+}
+
+.menu1 {
+  display: flex;
+}
+
+.menu1 a {
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  color: #fff;
+  font-size: 20px;
+  background: #e70000;
+}
+
+.menu1 a:hover {background: #930000}
+
+.menu2 {
+  display: flex;
+}
+
+.menu2 a {
+  padding: 10px 15px;
+  color: #808080;
+}
+
+.layer4_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    color: #808080;
+}
+
+span.bold {
+    font-weight: bold;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.user a {
+    padding-left: 5px;
+    color: #808080;
+}
+
+.content {
+    padding: 20px 0;
+    display: flex;
+}
+
+.content_block1 {
+    width: 50%;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.content_block1 h1 {
+    font-size: 22px;
+}
+
+.pic {
+    width: 100%;
+}
+
+.content_block2 {
+    width: 25%;
+    text-align: justify;
+    font-size: 14px;
+    padding-left: 20px;
+}
+
+.content_block2 h1 {
+    font-size: 18px;
+}
+
+.footer {
+    width: 100%;
+    background-color: #eeeeee;
+}
+
+.menu3 {
+    width: 25%;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 20px;
+}
+
+.footer li {
+    padding: 5px 0;
+    font-size: 16px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #808080;
+}
+
+.footer_info {
+    display: flex;
+    color: #808080;
+    align-items: center;
+}
+
+.footer_text {
+    width: 70%;
+    font-size: 14px;
+    text-align: center;
+}
+
+.footer_text h1 {
+    font-size: 18px;
+    text-align: center;
+}

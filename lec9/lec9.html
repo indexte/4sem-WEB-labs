@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+
+</head>
+<body>
+
+    <p>fizzbuzz</p>
+    <script>
+        for (i = 1; i < 30; i = i +1){
+		    if (i % 3 == 0 && i % 5 == 0){
+		        document.write("fizzbuzz", "<br>");
+		    }
+		    else if (i % 3 == 0){
+		        document.write("fizz", "<br>");
+		    }
+		    else if (i % 5 == 0){
+		        document.write("buzz", "<br>");
+		    }
+		    else{
+		        document.write(i, "<br>");
+		    }
+		}
+	</script>
+	
+    <script>
+        function foo() {
+        	var x1 = parseFloat(document.getElementById("x1").value);
+        	var x2 = parseFloat(document.getElementById("x2").value);
+        	var y1 = parseFloat(document.getElementById("y1").value);
+        	var y2 = parseFloat(document.getElementById("y2").value);
+        	if (x1 == 0 || x2 == 0 || y1 == 0 || y2 == 0) {
+        		alert("Точка на координатной оси!");
+        	}
+        	else {
+        		if (x1 > 0 && y1 > 0 && x2 > 0 && y2 > 0) {
+        			alert("Точки в первой четверти, растояние между ними = " + Math.sqrt((x1-x2)*(x1-x2)+     (y1-y2)*(y1-y2)));
+        		}
+        		else if (x1 > 0 && y1 < 0 && x2 > 0 && y2 < 0) {
+        			alert("Точки в четвертой четверти, растояние между ними = " + Math.sqrt((x1-x2)*(x1-x2)+     (y1-y2)*(y1-y2)));
+        		}
+        		else if (x1 < 0 && y1 > 0 && x2 < 0 && y2 > 0) {
+        			alert("Точки во второй четверти, растояние между ними = " + Math.sqrt((x1-x2)*(x1-x2)+     (y1-y2)*(y1-y2)));
+        		}
+        		else if (x1 < 0 && y1 < 0 && x2 < 0 && y2 < 0) {
+        			alert("Точки в третьей четверти, растояние между ними = " + Math.sqrt((x1-x2)*(x1-x2)+     (y1-y2)*(y1-y2)));
+        		}
+        		else {
+        			var text = "";
+        			if (x1 > 0 && y1 > 0) {
+        				text = text +  "Первая точка в первой четверти, а ";
+        			}
+        			else if (x1 < 0 && y1 > 0) {
+        				text = text +  "Первая точка во второй четверти, а ";
+        			}
+        			else if (x1 > 0 && y1 < 0) {
+        				text = text +  "Первая точка в четвертой четверти, а ";
+        			}
+        			else if (x1 < 0 && y1 < 0) {
+        				text = text +  "Первая точка в третьей четверти, а ";
+        			} else {
+        				text = text +  "Первая точка на координатной оси, а ";
+        			}
+        			if (x2 > 0 && y2 > 0) {
+        				text = text + "вторая точка в первой четверти";
+        			}
+        			else if (x2 < 0 && y2 > 0) {
+        				text = text +   "вторая точка во второй четверти";
+        			}
+        			else if (x2 > 0 && y2 < 0) {
+        				text = text +  "вторая точка в четвертой четверти";
+        			}
+        			else if (x2 < 0 && y2 < 0) {
+        				text = text +  "вторая точка в третьей четверти";
+        			} else {
+        				text = text +  "вторая точка на координатной оси";
+        			}
+        			alert(text);
+        		}
+        	}
+        }
+	</script>
+	<p>Координаты</p>
+	<form>
+		x1
+		<input type = "text" id = "x1">
+		y1
+		<input type = "text" id = "y1">
+		<br>
+		x2
+		<input type = "text" id = "x2">
+		y2
+		<input type = "text" id = "y2">
+		<input type = "button" value = "ANSWER" onclick = "foo()">
+	</form>
+</body>
+</html>

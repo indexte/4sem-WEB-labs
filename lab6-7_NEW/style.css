@@ -1,0 +1,70 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+
+    margin: 20px;
+    padding: 0;
+}
+
+form {
+	width:900px;
+}
+
+.table {
+	width: 100%;
+}
+
+.table th {
+	
+	font-weight: normal;
+}
+
+table, th, td {
+	border: 1px solid #000;
+}
+
+div {
+	display: flex;
+}
+
+.right {
+	text-align: right
+}
+
+.center {
+	text-align: center;
+}
+
+span {
+	display:block;
+	width:80px;
+	height: 0.95em;
+	text-align: left;
+	padding-bottom: 2px;
+    border: 1px solid #B2AEAE;
+}
+
+#amount {
+	width:70px;
+}
+
+.flex-end {
+	justify-content: flex-end;
+}
+
+.name, .adress, .result {
+	text-align: left;
+}
+
+.invoice {
+	margin-top: 30px;
+    background: #fff;
+}
+
+.invoice td, .invoice th {
+	background: #fff;
+	height: 30px;
+}
+
+.d-none {
+	display: none;
+}

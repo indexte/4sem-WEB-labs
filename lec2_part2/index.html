@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Анкета посетителя ресторана</h1>
+    <fieldset>
+        <legend>Контактная информация</legend>
+            <label>Имя</label>
+            <input type="text">
+            <br>
+            <label>Телефон</label>
+            <input type="text">
+            <br>
+            <label>Email</label>
+            <input type="email">
+            <br>
+            <label>Дата посещения</label>
+            <input type="date">
+            <br>
+    </fieldset>
+    <fieldset>
+        <legend>Персональная информация</legend>
+            <label>Возраст</label>
+            <input type="number" min="1" max="100" step="1">
+            <br>
+            <label>Любимая кухня</label>
+            <select>
+                <option>РУССКАЯ!</option>
+                <option>НЕ РУССКАЯ!</option>
+            </select>
+            <br>
+            <label>Какие блюда Вы хотели бы увидеть в меню?</label>
+            <textarea></textarea>
+            <br>
+    </fieldset>
+    <fieldset>
+        <legend>Оценка нашего заведения</legend>
+        <label>Почему вы выбрали наше заведение?</label>
+        <br>
+        <input type="radio" name="choose" value="work">Недалеко от дома/работы
+        <br>
+        <input type="radio" name="choose" value="ad">Увидел рекламу
+        <br>
+        <input type="radio" name="choose" value="friends">Посоветовали
+        <br>
+        <input type="radio" name="choose" value="price">Оптимальное соотношение цены и качества
+        <br>
+        <label>Вы будете рекомендовать наше заведение знакомым?</label>
+        <br>
+        <input type="radio"name="recc" value="yes">Да
+        <br>
+        <input type="radio" name="recc" value="no">Нет
+        <br>
+    </fieldset>
+    <br>
+    <input type="submit" name="Отправить">
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #rectangle {
+	        width: 300px;
+	        height: 140px;
+	        background: #4169E1;
+	        border: 1px solid black;
+            border-radius: 0 40px 0 40px;
+            margin: 70px;
+        }
+
+        .circle1 {
+        	width: 50px;
+        	height: 50px;
+        	background: black;
+        	border-radius: 50%;
+        	position: relative;
+        	left: 10px;
+        	top: 80px;
+        }
+
+        .circle2 {
+        	width: 50px;
+        	height: 50px;
+        	background: black;
+        	border-radius: 50%;
+        	position: relative;
+        	left: 240px;
+        	bottom: 40px;
+        }
+
+        #olympic_bg {
+            width: 300px;
+            height: 200px;
+            background: #DCDCDC;
+            position: absolute;
+            margin: 70px;
+        }
+
+        .ring {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 8px solid;
+            position: absolute;
+        }
+
+        .ring_blue {
+            border-color: darkblue;
+            top: 10%;
+            left: 10%;
+        }
+
+        .ring_black {
+            border-color: black;
+            top: 10%;
+            left: 35%;
+        }
+
+        .ring_red {
+            border-color: red;
+            top: 10%;
+            left: 60%;
+        }
+
+        .ring_yellow {
+            border-color: yellow;
+            bottom: 10%;
+            left: 22%;
+        }
+
+        .ring_green {
+            border-color: green;
+            bottom: 10%;
+            left: 47%;
+        }
+    </style>
+</head>
+<body>
+    <div id="rectangle">
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    </div>
+
+    <div id="olympic_bg">
+        <div class="ring ring_blue"></div>
+        <div class="ring ring_black"></div>
+        <div class="ring ring_red"></div>
+        <div class="ring ring_yellow"></div>
+        <div class="ring ring_green"></div>
+    </div>
+</body>
+</html

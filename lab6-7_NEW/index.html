@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<form name="myForm" onsubmit="return false">
+		<table class="table">
+			<tr><th>Замовлення на придбання товару</th></tr>
+			<tr><td><label>Назва товару</label><br>
+				<select name="product"id="product1">
+					<option  value="12">Приключения Оливера Твиста - 12</option>
+					<option  value="10">Кобзар - 10</option>
+					<option   value="15.35">Метро 2033 - 15.35</option>
+					<option  value="20.5">Биография Валерия Альбертовича Жмышенко - 20.5</option>
+					<option value="2">Стикерпак "Книги - 2"</option>
+				</select>
+			</td>
+			</tr>
+			<tr><td><div><label for="amount">Кількість</label>
+				<input type="number" id="amount" name="amount" value="0" min="0" onclick="getPrice()">
+				Вартість замовлених книг:<span id="price">0</span></div></td>
+			</tr>
+			<tr><td><label for="delivary">Спосіб доставки замовлення</label><br>
+				
+				<label><input type="radio" name="delivary" id="post"  value="1.05" >Почтою</label><br>
+				<label><input type="radio" name="delivary" id="home"  value="1.15">Доставка до дому</label><br>
+			
+				<label><input type="checkbox" id="additional"  value="0.1">У святковій упаковці</label>
+			</td>
+			</tr>
+			<tr><td ><div class="flex-end"><label>Загальна вартість замовлення:</label><span id="result"></span><input type="button" id="calculate" value="Підрахувати"></div></td></tr>
+			<tr><td><label>Дані замовника</label><br>
+				<label for="name">Имя:</label><input type="text" id="user" name="name" required="required">
+				<label for ="adress">Адреса:</label><input type="text" id="adress" name="adress" required="required"></td></tr>
+				<tr><td class=right><input type="reset" id="cancel"  value="Відновити початкові значення полів" >
+					<input type="submit" id="res" value="Відіслати дані"></td></tr>
+		</table>
+	</form>
+
+	<table id="invoice" class="invoice d-none" width="900px"></table>
+
+	<script src="script.js"></script>
+</body>
+</html>

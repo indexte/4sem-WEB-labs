@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .none {
+            list-style: none;
+        }
+
+        .trngl {
+            list-style: none;
+            text-indent: -1em;
+        }
+        .trngl li::before {
+            content: '\25b7';
+            color: orange;
+            padding-right: 5px;
+        }
+
+        .greek {
+            list-style: lower-greek;
+        }
+        
+    </style>
+</head>
+<body>
+    <ul class="none">
+        <li>Красный</li>
+        <li>Желтый</li>
+        <li>Зеленый</li>
+        <li>Синий</li>
+    </ul>
+
+    <ul class="trngl">
+        <li>Красный</li>
+        <li>Желтый</li>
+        <li>Зеленый</li>
+        <li>Синий</li>
+    </ul>
+
+    <ol>
+        <li>Иванов</li>
+        <li>Петров</li>
+        <li>Сидоров</li>
+        <li>Николаев</li>
+    </ol>
+
+    <ol class="greek">
+        <li>Иванов</li>
+        <li>Петров</li>
+        <li>Сидоров</li>
+        <li>Николаев</li>
+    </ol>
+</body>
+</html>
